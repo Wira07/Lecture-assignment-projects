@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Halaman Web Dengan Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <style>
+      img {
+        width: 150px;
+      }
+
+      .baca_selengkapnya {
+        color: blue;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand bg-success">
+      <div class="container-fluid">
+        <div class="navbar-brand">
+          <a href="#" class="navbar-brand p-2 text-bg-dark">Wira Sukma Saputra</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a href="#" class="nav-link dropdown text-white">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link dropdown text-white">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown">Galery</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#" class="dropdown-item">Galery 1</a></li>
+                  <li><a href="#" class="dropdown-item">Galery 2</a></li>
+                  <li><a href="#" class="dropdown-item">Galery 3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link dropdown text-white">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row pt-2">
+        <div class="col-lg-8 bg-primary text-white mr-1">
+          <h2>Perpustakaan Universitas Kuningan</h2>
+        </div>
+        <div class="col-lg-4 bg-secondary text-dark">
+          <h2 class="text-center" style="color: white">Contact</h2>
+        </div>
+      </div>
+      <div class="row mt-2 mb-2">
+        <div class="col-lg-8 bg-light pt-2 pb-2">
+          <h2>Visi</h2>
+          <p class="text-justify">"Terwujudnya Fakultas Ilmu Komputer Universitas Kuningan Sebagai Fakultas Anda Yang Unggul Dalam Penyelenggaraan Tri Darma Perguruan Tinggi Di Wilayah Jawa Barat Pada Tahun 2032"</p>
+
+          <span class="baca_selengkapnya">Baca Selengkapnya....</span>
+
+          <div class="text-justify pesan">
+            <h2>Misi</h2>
+            <ul>
+              <li>Menyelenggarakan pendidikan, penelitian dan pengabdian pada masyarakat secara terpadu berdasarkan pada kaidah - kaidah pendidikan modern.</li>
+              <li>Membina dan mengembangkan kehidupan akdemik yang sehat sesuai dengan nilai-nilai dan norma norma yang berkembang di dunia akademik.</li>
+              <li>Menyelenggarakan riset-riset ilmiah yang tidak saja mampu mendorong pertumbuhan ilmu dan teknologi lagi juga dapat menjamin kebutuhan dunia industri danm bisnis yang berkembang sangat pesat dewasa ini.</li>
+              <li>Menjadi sarana terjadinya pertemuan-pertemuan ilmiah baik lingkup lokal maupun nasional sehingga dapat memberikan warna dan kontribusi yang nyata dalam kemajuan ilmu dan teknologi.</li>
+              <li>Melayani, memandu, dan menyatu dengan masyarakat dalam upaya ikut serta mewujudkan masyarakat baru indonesia yang adil dan makmur.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-4 bg-light pt-2 pb-2">
+          <div style="text-align: center">
+            <img src="gambar/universitas kuningan.png" />
+          </div>
+          <table class="table" style="margin-top: 30px">
+            <tbody>
+              <tr>
+                <th scope="row">Telepon</th>
+                <td>089633445941</td>
+              </tr>
+              <tr>
+                <th scope="row">Email</th>
+                <td>perpustakaanuniku.ac.id</td>
+              </tr>
+              <tr>
+                <th scope="row">Alamat</th>
+                <td>Jl. Pramuka No.67, Purwawinangun, Kec. Kuningan, Kabupaten Kuningan, Jawa Barat 45512</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer bg-success fixed-bottom">
+      <div class="container">
+        <p class="text-center text-white m-0 p-2">Hak Cipta &copy; FKOM UNIKU | 2022</p>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".pesan").hide();
+        $(".baca_selengkapnya").click(function () {
+          $(".pesan").slideDown("slow");
+          $(this).hide();
+        });
+      });
+    </script>
+  </body>
+</html>
